@@ -20,6 +20,7 @@ include "spring-webmvc"
 include "spring-webflux"
 include "spring-websocket"
 include "spring-framework-bom"
+include 'spring-test-zlh'
 
 // Exposes gradle buildSrc for IDE support
 include "buildSrc"
@@ -29,3 +30,4 @@ rootProject.name = "spring"
 rootProject.children.each {project ->
 	project.buildFileName = "${project.name}.gradle"
 }
+
